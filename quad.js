@@ -5,16 +5,24 @@ var legendreP = require("legendre-poly")
   , roots     = require("companion-roots")
   , horner    = require("horner")
 
-function gaussQuadrature(n) {
+function gaussQuadrature(n, a, b) {
   var p = legendreP(n)
     , x = roots(p)[0]
     , d = deriv(p)
     , w = new Array(n)
-    , s, t
-  for(var i=0; i<n; ++i) {
+    , s, t, i
+  for(i=0; i<n; ++i) {
     s = x[i]
     t = horner(d, s)
     w[i] = 2.0 / ((1.0 - s*s) * t * t)
+  }
+  if(!(a === undefined || b === undefined)) {
+    s = 0.5 * (b - a)
+    t = 0.5 * (b + a)
+    for(i=0; i<n; ++i) {
+      x[i] = x[i] * s + t
+      w[i] *= s
+    }
   }
   return [x, w]
 }
