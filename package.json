@@ -1,0 +1,41 @@
+{
+  "name": "gauss-qudrature",
+  "version": "0.0.0",
+  "description": "Gauss-Legendre quadrature rules",
+  "main": "quad.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "companion-roots": "~0.0.1",
+    "horner": "~0.0.0",
+    "legendre-poly": "~0.0.0",
+    "poly-derivative": "~0.0.0"
+  },
+  "devDependencies": {
+    "almost-equal": "~0.0.0",
+    "tap": "~0.4.2"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/gauss-quadrature.git"
+  },
+  "keywords": [
+    "quadrature",
+    "gauss",
+    "legendre",
+    "points",
+    "weights",
+    "numeric",
+    "integration",
+    "polynomial",
+    "calculus"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "286d248bb9f42a2f7a124ce54f70cb18d555b99e"
+}
