@@ -1,16 +1,16 @@
 {
   "name": "gauss-qudrature",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Gauss-Legendre quadrature rules",
   "main": "quad.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "companion-roots": "~0.0.1",
     "horner": "~0.0.0",
     "legendre-poly": "~0.0.0",
-    "poly-derivative": "~0.0.0"
+    "poly-derivative": "~0.0.0",
+    "durand-kerner": "~0.0.2"
   },
   "devDependencies": {
     "almost-equal": "~0.0.0",

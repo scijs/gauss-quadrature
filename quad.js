@@ -2,7 +2,7 @@
 
 var legendreP = require("legendre-poly")
   , deriv     = require("poly-derivative")
-  , roots     = require("companion-roots")
+  , roots     = require("durand-kerner")
   , horner    = require("horner")
 
 function gaussQuadrature(n, a, b) {
