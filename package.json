@@ -1,6 +1,6 @@
 {
-  "name": "gauss-qudrature",
-  "version": "0.0.1",
+  "name": "gauss-quadrature",
+  "version": "0.0.0",
   "description": "Gauss-Legendre quadrature rules",
   "main": "quad.js",
   "directories": {
