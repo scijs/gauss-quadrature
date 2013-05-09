@@ -39,9 +39,8 @@ If either `a` or `b` is unspecified, the interval defaults to `[-1, 1]`
 * `x` is the list of quadrature points
 * `w` is the list of quadrature weights
 
-
 ## Note
-Currently numeric.js' eigen decomposition code has some bugs, so this library may fail for high numbers of quadrature points.  In theory this could be avoided by using a better set of routines for computing eigenvalues/vectors or some other method for finding roots (or even by just hard coding some of the quadrature weights into a table).  Until this issue gets fixed, this library is of limited use.
+Quadrature points are only accurate to 1e-6
 
 # Credits
 (c) 2013 Mikola Lysenko. MIT License
